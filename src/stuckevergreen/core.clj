@@ -8,5 +8,5 @@
    :body    (controller.isstuck/evergreen)})
 
 (defn -main
-  [& args]
-  (run-jetty handler {:port 9090}))
+  [& _]
+  (run-jetty handler {:port 80}))
