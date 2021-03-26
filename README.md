@@ -4,7 +4,7 @@ Codebase of a RESTful service to check if Evergreen is stuck at Suez Channel! En
 
 # Code
 
-- Programming language: <img src="/resources/clojure.png" alt="Clojure" width="50"/>
+- Programming language: <img src="/resources/clojure.png" alt="Clojure" width="14"/>
 - Libraries: Ring and Etaoin
 
 ## How this service gets status of Evergreen Situation?
