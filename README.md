@@ -5,7 +5,7 @@ Codebase of a RESTful service to check if Evergreen is stuck at Suez Channel! En
 # Code
 
 - Programming language: <img src="/resources/clojure.png" alt="Clojure" width="20"/> Clojure!
-- Libraries: Ring and Etaoin
+- Libraries: [Ring](https://github.com/ring-clojure/ring) and [Etaoin](https://github.com/igrishaev/etaoin)
 
 # Enjoy!
 
