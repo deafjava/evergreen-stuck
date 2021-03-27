@@ -10,5 +10,6 @@
                  [ring/ring-jetty-adapter "1.9.2"]]
   :main ^:skip-aot stuckevergreen.core
   :min-lein-version "2.0.0"
+  :jvm-opts ["-agentlib:jdwp=transport=dt_socket,server=y,suspend=n"]
   :repl-options {:init-ns stuckevergreen.core}
   :profiles {:production {:env {:production true}}})
