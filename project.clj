@@ -11,5 +11,4 @@
   :main ^:skip-aot stuckevergreen.core
   :min-lein-version "2.0.0"
   :repl-options {:init-ns stuckevergreen.core}
-  :uberjar-name "stuckevergreen-app.jar"
   :profiles {:production {:env {:production true}}})
