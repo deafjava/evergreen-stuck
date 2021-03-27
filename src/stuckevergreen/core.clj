@@ -1,6 +1,7 @@
 (ns stuckevergreen.core
   (:use ring.adapter.jetty)
-  (:require [stuckevergreen.diplomat.http :as diplomat.http]))
+  (:require [stuckevergreen.diplomat.http :as diplomat.http])
+  (:gen-class))
 
 (defn handler [_]
   {:status  200
