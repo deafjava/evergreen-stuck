@@ -3,7 +3,7 @@
             [clojure.data.json :as json]
             [clojure.string :as str]))
 
-(defn seek-status []
+(defn- seek-status []
   (let [driver (wd/chrome-headless)]
     (try (do
            (wd/go driver "https://istheshipstillstuck.com/")

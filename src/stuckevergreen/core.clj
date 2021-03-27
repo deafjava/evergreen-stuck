@@ -1,11 +1,11 @@
 (ns stuckevergreen.core
   (:use ring.adapter.jetty)
-  (:require [stuckevergreen.controller.isstuck :as controller.isstuck]))
+  (:require [stuckevergreen.diplomat.http :as diplomat.http]))
 
 (defn handler [_]
   {:status  200
    :headers {"Content-Type" "application/json"}
-   :body    (controller.isstuck/evergreen)})
+   :body    (diplomat.http/isstillstuck)})
 
 (defn -main
   [& _]
