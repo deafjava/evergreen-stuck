@@ -1,0 +1,1 @@
+web: java $JVM_OPTS -cp target/stuckevergreen-app.jar clojure.main -m stuckevergreen.web

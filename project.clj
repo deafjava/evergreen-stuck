@@ -9,4 +9,7 @@
                  [ring/ring-core          "1.9.2"]
                  [ring/ring-jetty-adapter "1.9.2"]]
   :main ^:skip-aot stuckevergreen.core
-  :repl-options {:init-ns stuckevergreen.core})
+  :min-lein-version "2.0.0"
+  :repl-options {:init-ns stuckevergreen.core}
+  :uberjar-name "stuckevergreen-app.jar"
+  :profiles {:production {:env {:production true}}})
