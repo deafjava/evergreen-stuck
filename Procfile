@@ -1,1 +1,1 @@
-web: java $JVM_OPTS -cp target/stuckevergreen-0.1.0-SNAPSHOT.jar clojure.main -m stuckevergreen.web -p '{:path-driver "/app/.chromedriver/bin/chromedriver" :path-browser "/app/.apt/usr/bin/google-chrome" }'
+web: lein run -p '{:path-driver "/app/.chromedriver/bin/chromedriver" :path-browser "/app/.apt/usr/bin/google-chrome"}'

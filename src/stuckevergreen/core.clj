@@ -10,4 +10,4 @@
 
 (defn -main
   [& _]
-  (run-jetty handler {:port 80}))
+  (run-jetty handler {}))
