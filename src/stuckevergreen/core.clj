@@ -3,6 +3,9 @@
   (:require [stuckevergreen.diplomat.http :as diplomat.http])
   (:gen-class))
 
+(def path-chromedriver "/app/.chromedriver/bin/chromedriver")
+(def path-google-chrome "/app/.apt/usr/bin/google-chrome")
+
 (defn handler [_]
   {:status  200
    :headers {"Content-Type" "application/json"}
@@ -12,5 +15,5 @@
   [& _]
   (let [port (Integer/parseInt (System/getenv "PORT"))]
     (run-jetty handler {:port         port
-                        :path-driver  "/app/.chromedriver/bin/chromedriver"
-                        :path-browser "/app/.apt/usr/bin/google-chrome"})))
+                        :path-driver  path-chromedriver
+                        :path-browser path-google-chrome})))
